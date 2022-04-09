@@ -1,0 +1,78 @@
+/* ******************** NAVBAR MENU ********************** */
+
+header {
+    background: var(--NB000);
+    height:80px;/*!Ne pas enlever bar menu fixe*/
+}
+
+a.navbar-brand img {
+    width:40px;
+    height:40px;
+}
+
+div.headerMenu {
+    width:100vw;
+}
+
+nav.a:hover {
+    color:var(--HOT500);
+    fill:rgba(255,115,5,0.8);
+}
+
+nav a svg.myLogo {
+    width:14px;
+    height:auto;
+    fill:var(--NB750);
+}
+
+nav a svg.myLogo:hover {
+    fill:rgba(255,115,5,0.8);
+}
+
+div.headerNavButtonDiv {
+    background-image: url(img/LogoDev.png);
+}
+
+button div img {
+    
+    width:20px;
+    height:20px;
+}
+
+button:focus div#bebe {
+    display:none;
+    width:20px;
+    height:20px;
+}
+
+/* Classe principale de la barre de navigation */
+.navbar {
+    /* Couleur de fond de la barre de navigation */
+    background-color: var(--NB000);
+    border-color: var(--NB000);
+    font-size: $sizeP* 0.8;
+}
+
+/* Couleur des titres affichés dans la barre */
+.navbar .navbar-brand {
+    color: var(--NB800);
+    font-family: var(--police);
+    font-size: $sizeP* 0.8;
+}
+
+/* Couleur utilisée lors du passage de la souris sur un titre de la barre */
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: var(--HOT500);
+}
+   
+/* Couleur utilisée pour les liens */
+.navbar .navbar-nav > li > a {
+    color: var(--NB800);
+}
+   
+/*Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: var(--HOT500);
+}

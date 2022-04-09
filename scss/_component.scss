@@ -1,0 +1,35 @@
+/* ******************** SEPARATOR LINE ********************** */
+div.lineSeparator {
+    margin: 40px auto 80px auto;
+    border: 1px solid var(--HOT500);
+    width: 80px;
+    text-align: center;
+    box-shadow: 1px 0.5px 2px 0px var(--NB1000);
+}
+
+/* ******************** UNDERTITLE ********************** */
+div.underLineTitleH2 {
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+div.underLineGraphic {
+    width:80px;
+    height:2px;
+    margin:0px 10px;
+    border: 1px solid var(--HOT500);
+    text-align: center;
+    box-shadow: 1px 0.5px 2px 0px var(--NB1000);
+}
+
+div.bibi {
+    width: 32px;
+    height: 32px;;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    margin:10px; 
+}
