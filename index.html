@@ -16,10 +16,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- -------------------- NavBar Menu -------------------- -->
+    <!-- -------------------- header NavBar Menu -------------------- -->
     <header class="header">
         <div class="headerMenu">
-            
             <nav class="navbar navbar-expand-md fixed-top"><!--navbar-light bg-light-->
                 <div class="container container-fluid">
                     <a id="logo" class="navbar-brand" href="#">
@@ -29,16 +28,11 @@
                             <path d="M85.2363 491.218C89.9129 469.216 111.54 455.172 133.541 459.848L141.214 461.479L48.0697 899.689V899.689C21.8307 894.111 5.081 868.319 10.6583 842.08L85.2363 491.218Z"/>
                             <path d="M90.3074 503.398C85.4573 480.58 100.023 458.151 122.841 453.301L156.271 446.195L165.053 487.51L90.3074 503.398V503.398Z"/>
                         </svg>
-                        <!--<img class="myLogo" src="img/myLogo.svg">-->
                         <span class="md">WEB Developper</span>
                     </a>
                     <button class="navbar-toggler" type="toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                       
-                        <!--<div id="bebe"class="headerNavButtonDiv">
-                            <img id="imgB" src="img/cartelg.png">   
-                        </div>-->
-                        <i type="button" class="bi bibiToggleOpen bi-list"></i><!--<img href="img/burger.svg" style="width:32px;height:32px">-->
+                        <i type="button" class="bi bibiToggleOpen bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav menu me-auto mb-2 mb-md-0">
@@ -69,21 +63,97 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#coordonates">
                                     <i class="bi bi-house"></i>
-                                        Contactez-moi
+                                        Contact
                                 </a>
                             </li>
                         </ul>
                     </div>
-                
                 </div>
             </nav>
         </div>
     </header>
+
+    <!-- -------------------- Main Content -------------------- -->
     <main>
-        <div>
-            <p class="defg">salut</p>
+        <!-- -------------------- mainTopPresentation -------------------- -->
+        <div class="mainTop">
+            <div class="mainTopLogo" id="idMyLogo">
+                <!--src="img/monImage.png"-->
+                <!--<img src="img/monImageDevIntWEBetMobile.png" alt="Logo">-->
+            </div>
         </div>
+        <div class="mainTopPresentationImg" id="mainTopPresentationImgCss">
+            <div class="mainTopPresentationDivH1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="900" fill="none" class="myLogo" viewBox="0 0 300 900">
+                        <path class="myLogo" d="M72.8115 95.3135C63.5838 51.9009 91.2962 9.22762 134.709 -8.10237e-07V-8.10237e-07L292.114 740.534V740.534C248.702 749.762 206.028 722.05 196.801 678.637L72.8115 95.3135Z"/>
+                        <path d="M30.3891 880C30.3891 868.954 39.3434 860 50.3891 860H280.561C291.606 860 300.561 868.954 300.561 880V880C300.561 891.046 291.606 900 280.561 900H50.3891C39.3434 900 30.3891 891.046 30.3891 880V880Z"/>
+                        <path d="M85.2363 491.218C89.9129 469.216 111.54 455.172 133.541 459.848L141.214 461.479L48.0697 899.689V899.689C21.8307 894.111 5.081 868.319 10.6583 842.08L85.2363 491.218Z"/>
+                        <path d="M90.3074 503.398C85.4573 480.58 100.023 458.151 122.841 453.301L156.271 446.195L165.053 487.51L90.3074 503.398V503.398Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1>
+                        <div class="divH1 container">
+                            <div>
+                                <span class="sm">Développeur </span>
+                                <span class="xl">- Intégrateur </span>
+                                <span class="sm">WEB</span>
+                                <span class="lg"> & WEB mobile</span>
+                            </div>
+                            
+                            <div class="lineSeparatorH1" id="bienvenue"></div>
+                            <div>
+                                <span class="sm noLg" style="font-size:smaller">F. MANIER</span>
+                                <span class="lg" style="font-size:smaller">François MANIER</span>
+                            </div>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------- SECTION WELCOME -------------------- -->
+        <div class="lineSeparator" id="bienvenue"></div>
+        <section class="welcome">
+            <h2>
+                <span class="lg">Bonjour et </span>
+                <span class="sm">Bienvenue</span>
+                <span class="md"> sur mon CV</span>
+            </h2>
+            <div class="underLineTitleH2">
+                <div class="underLineGraphic"></div>
+                <div class="bibi" id="welcomeIcon"></div>
+                <div class="underLineGraphic"></div>
+            </div>
+            <div class="text">
+                <p>Je suis développeur et intégrateur WEB situé dans la région des Hauts de france.<br>
+                    <br>
+                    Mon parcours professionnel est diversifié, j'ai été responsable en gestion de stocks
+                    dans le milieu maritime, puis ingénieur d'affaire - cadre responsable opérationnel dans 
+                    le milieu du nucléaire, et superviseur des opérations de production dans le milieu du
+                    ferroviaire.<br>
+                    Avec ces différentes expériences, je peux comprendre les problématiques que
+                    vous pouvez rencontrer.<br>
+                    Dans ces environnements comme dans tant d'autres, chaque acteur du projet à son importance.
+                    Je saurai les écouter car c'est une de mes qualités.
+                    Vous pourrez avoir plus de détails dans ma section intitulé :"Expériences".
+                    <br>
+                    En continuant votre lecture, je vous présenterai mes compétences et services en liaison avec
+                    le développement informatique et la conception de sites internet destinés aux
+                    professionnels et aux particuliers. Vos interfaces seront construits gràce aux langages HTML,
+                    CSS, dynamisé en Javascript et facilités avec les frameworks, librairies et outils (comme Bootstrap,
+                    jQuery, Sass...) pour le front-end. Les dialogues serveurs seront réalisé avec PHP, Javascript
+                    avec React-JS. Vos bases de données seront codées en SQL.<br>
+                    <br>
+                    Je vous invite également à découvrir la section "compétences" qui abordera cela plus en détails.<br>
+                    <br>
+                    Bonne lecture !
+                </p>
+            </div>
+        </section>
     </main>
+
     <!-- -------------------- FOOTER -------------------- -->
     <footer>
         <div>
