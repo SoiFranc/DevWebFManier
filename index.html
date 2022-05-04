@@ -1,172 +1,518 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-    <meta name="description" content="Ma page web présente mon curriculum vitae (CV).
-        Vous y trouverez mes compétences, savoir-faire et savoir être.
-        Mes années d'expériences expliquant mon parcours professionnel.
-        Mes compétences technique en développement web, mais également en gestion de projet.">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon CV</title>
+        <meta name="description" content="Ma page web présente mon curriculum vitae (CV).
+            Vous y trouverez mes compétences, savoir-faire et savoir être.
+            Mes années d'expériences expliquant mon parcours professionnel.
+            Mes compétences technique en développement web, mais également en gestion de projet.">
 
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-</head>
-<body>
-    <!-- -------------------- header NavBar Menu -------------------- -->
-    <header class="header">
-        <div class="headerMenu">
-            <nav class="navbar navbar-expand-md fixed-top"><!--navbar-light bg-light-->
-                <div class="container container-fluid">
-                    <a id="logo" class="navbar-brand" href="#">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!-- -------------------- header NavBar Menu -------------------- -->
+        <header class="header">
+            <div class="headerMenu">
+                <nav class="navbar navbar-expand-md fixed-top"><!--navbar-light bg-light-->
+                    <div class="container container-fluid">
+                        <a id="logo" class="navbar-brand" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="900" fill="none" class="myLogo" viewBox="0 0 300 900">
+                                <path class="myLogo" d="M72.8115 95.3135C63.5838 51.9009 91.2962 9.22762 134.709 -8.10237e-07V-8.10237e-07L292.114 740.534V740.534C248.702 749.762 206.028 722.05 196.801 678.637L72.8115 95.3135Z"/>
+                                <path d="M30.3891 880C30.3891 868.954 39.3434 860 50.3891 860H280.561C291.606 860 300.561 868.954 300.561 880V880C300.561 891.046 291.606 900 280.561 900H50.3891C39.3434 900 30.3891 891.046 30.3891 880V880Z"/>
+                                <path d="M85.2363 491.218C89.9129 469.216 111.54 455.172 133.541 459.848L141.214 461.479L48.0697 899.689V899.689C21.8307 894.111 5.081 868.319 10.6583 842.08L85.2363 491.218Z"/>
+                                <path d="M90.3074 503.398C85.4573 480.58 100.023 458.151 122.841 453.301L156.271 446.195L165.053 487.51L90.3074 503.398V503.398Z"/>
+                            </svg>
+                            <span class="md">WEB Developper</span>
+                        </a>
+                        <button class="navbar-toggler" type="toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <i type="button" class="bi bibiToggleOpen bi-list"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav menu me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#bienvenue">
+                                        <i class="bi bi-bookmark-check"></i>
+                                            Présentation
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experiences">
+                                        <i class="bi bi-building"></i>
+                                            Expériences
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#studies">
+                                        <i class="bi bi-mortarboard"></i>
+                                            Etudes
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skill">
+                                        <i class="bi bi-keyboard"></i>
+                                            Compétences
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#coordonates">
+                                        <i class="bi bi-house"></i>
+                                            Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- -------------------- Main Content -------------------- -->
+        <main>
+            <!-- -------------------- mainTopPresentation -------------------- -->
+            <div class="mainTop">
+                <div class="mainTopLogo" id="idMyLogo">
+                    <!--src="img/monImage.png"-->
+                    <!--<img src="img/monImageDevIntWEBetMobile.png" alt="Logo">-->
+                </div>
+            </div>
+            <div class="mainTopPresentationImg" id="mainTopPresentationImgCss">
+                <div class="mainTopPresentationDivH1">
+                    <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="900" fill="none" class="myLogo" viewBox="0 0 300 900">
                             <path class="myLogo" d="M72.8115 95.3135C63.5838 51.9009 91.2962 9.22762 134.709 -8.10237e-07V-8.10237e-07L292.114 740.534V740.534C248.702 749.762 206.028 722.05 196.801 678.637L72.8115 95.3135Z"/>
                             <path d="M30.3891 880C30.3891 868.954 39.3434 860 50.3891 860H280.561C291.606 860 300.561 868.954 300.561 880V880C300.561 891.046 291.606 900 280.561 900H50.3891C39.3434 900 30.3891 891.046 30.3891 880V880Z"/>
                             <path d="M85.2363 491.218C89.9129 469.216 111.54 455.172 133.541 459.848L141.214 461.479L48.0697 899.689V899.689C21.8307 894.111 5.081 868.319 10.6583 842.08L85.2363 491.218Z"/>
                             <path d="M90.3074 503.398C85.4573 480.58 100.023 458.151 122.841 453.301L156.271 446.195L165.053 487.51L90.3074 503.398V503.398Z"/>
                         </svg>
-                        <span class="md">WEB Developper</span>
-                    </a>
-                    <button class="navbar-toggler" type="toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <i type="button" class="bi bibiToggleOpen bi-list"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav menu me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#bienvenue">
-                                    <i class="bi bi-bookmark-check"></i>
-                                        Présentation
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experiences">
-                                    <i class="bi bi-building"></i>
-                                        Expériences
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#studies">
-                                    <i class="bi bi-mortarboard"></i>
-                                        Etudes
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skill">
-                                    <i class="bi bi-keyboard"></i>
-                                        Compétences
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#coordonates">
-                                    <i class="bi bi-house"></i>
-                                        Contact
-                                </a>
-                            </li>
-                        </ul>
+                    </div>
+                    <div>
+                        <h1>
+                            <div class="divH1 container">
+                                <div>
+                                    <span class="sm">Développeur </span>
+                                    <!--<span class="xl">- Intégrateur </span>-->
+                                    <span class="sm">WEB</span>
+                                    <span class="lg"> & WEB mobile</span>
+                                </div>
+                                
+                                <div class="lineSeparatorH1" id="bienvenue"></div>
+                                <div>
+                                    <span class="sm noLg" style="font-size:smaller">F. MANIER</span>
+                                    <span class="lg" style="font-size:smaller">François MANIER</span>
+                                </div>
+                            </div>
+                        </h1>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- -------------------- Main Content -------------------- -->
-    <main>
-        <!-- -------------------- mainTopPresentation -------------------- -->
-        <div class="mainTop">
-            <div class="mainTopLogo" id="idMyLogo">
-                <!--src="img/monImage.png"-->
-                <!--<img src="img/monImageDevIntWEBetMobile.png" alt="Logo">-->
             </div>
-        </div>
-        <div class="mainTopPresentationImg" id="mainTopPresentationImgCss">
-            <div class="mainTopPresentationDivH1">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="900" fill="none" class="myLogo" viewBox="0 0 300 900">
-                        <path class="myLogo" d="M72.8115 95.3135C63.5838 51.9009 91.2962 9.22762 134.709 -8.10237e-07V-8.10237e-07L292.114 740.534V740.534C248.702 749.762 206.028 722.05 196.801 678.637L72.8115 95.3135Z"/>
-                        <path d="M30.3891 880C30.3891 868.954 39.3434 860 50.3891 860H280.561C291.606 860 300.561 868.954 300.561 880V880C300.561 891.046 291.606 900 280.561 900H50.3891C39.3434 900 30.3891 891.046 30.3891 880V880Z"/>
-                        <path d="M85.2363 491.218C89.9129 469.216 111.54 455.172 133.541 459.848L141.214 461.479L48.0697 899.689V899.689C21.8307 894.111 5.081 868.319 10.6583 842.08L85.2363 491.218Z"/>
-                        <path d="M90.3074 503.398C85.4573 480.58 100.023 458.151 122.841 453.301L156.271 446.195L165.053 487.51L90.3074 503.398V503.398Z"/>
-                    </svg>
+
+            <!-- -------------------- SECTION WELCOME -------------------- -->
+            <div class="lineSeparator" id="bienvenue"></div>
+            <section class="welcome">
+                <h2> Bijour vousôtes
+                    <span class="sm">Bonjour</span>
+                    <span class="lg"> et Bienvenue</span>
+                    <span class="md"> sur mon CV</span>
+                </h2>
+                <div class="underLineTitleH2">
+                    <div class="underLineGraphic"></div>
+                    <div class="bibi" id="welcomeIcon"></div>
+                    <div class="underLineGraphic"></div>
                 </div>
-                <div>
-                    <h1>
-                        <div class="divH1 container">
-                            <div>
-                                <span class="sm">Développeur </span>
-                                <span class="xl">- Intégrateur </span>
-                                <span class="sm">WEB</span>
-                                <span class="lg"> & WEB mobile</span>
+                <div class="text">
+                    <p>Je suis développeur WEB et WEB mobile. Et vous pouvez me rencontrer dans la région des Hauts de france.<br>
+                        <br>
+                        Mon parcours professionnel est diversifié, cela me permet de mieux comprendre les problèmatiques
+                        qu'un client peut rencontrer.<br>
+                        En effet, j'ai été responsable en gestion de stocks dans le milieu maritime,
+                        puis ingénieur d'affaire - cadre responsable opérationnel dans le milieu du nucléaire,
+                        et superviseur des opérations de production dans le milieu du ferroviaire.<br>
+                        Dans ces différents environnements comme dans tant d'autres, chaque projet passe par des phases de
+                        préparations, d'échanges et de tests. Tout cela centré sur la prise en compte des points de vue
+                        des clients finaux, ainsi que l'avis de chaque acteur du projet. 
+                        Pour ma part, c'est un avantage car voici 2 de mes principales qualités : être à l'Ecoute et 
+                        ma capacité d'adaptation.
+                        Vous pourrez avoir plus de détails dans ma section intitulé :"Expériences".
+                        <br>
+                        En continuant votre lecture, je vous présenterai mes compétences et services en liaison avec
+                        le développement informatique et la conception de sites internet destinés aux
+                        professionnels et aux particuliers. Vos interfaces seront construits gràce aux langages HTML,
+                        CSS, dynamisés en Javascript et facilités avec les frameworks, librairies et outils (comme Bootstrap,
+                        jQuery, Sass...) pour le front-end. Les dialogues clients-serveurs seront réalisés avec PHP, Javascript
+                        et React-JS. Vos bases de données peuvent être codées en SQL.<br>
+                        Ce sont bien-entendu pour vos projets des bases de langages, qui évoluent car vous l'aurez compris
+                        avec mes différentes "vies pro", j'aime apprendre, m'améliorer et approfondir mes connaissances.
+                        <br>
+                        Je vous invite également à découvrir la section "compétences" qui abordera cela plus en détails.<br>
+                        <br>
+                        Bonne lecture !
+                    </p>
+                </div>
+            </section>
+        
+            <!-- -------------------- SECTION EXPERIENCES -------------------- -->
+            <div class="lineSeparator" id="experiences"></div>
+            <section class="experience N2" id="experience">
+                <div class="container">
+                    <div class="heading">
+                        <h2><span class="sm">Expériences pro</span><span class="md lg">fessionnelles</span></h2>
+                    </div>
+                    <div class="underLineTitleH2">
+                        <div class="underLineGraphic"></div><div class="bibi" id="experiencesIcon"></div><div class="underLineGraphic"></div>
+                    </div>
+                    <ul class="timeline timelineExperience">
+                        <li class="subsectionExperience">
+                            <div class="timeline-badge"><i class="bi bi-briefcase"></i></div>
+                            <div class="timeline-panel-container"> <!-- c'est les bulles de dialogue Texte de la timeline -->
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h3><span class="sm">SNCF</span><span class="md lg"> – FRET SA</span></h3>
+                                        <h4><span class="sm">Superviseur</span><span class="md lg"> de</span><span> Production</span></h4>
+                                        <p class="text-muted" id="yearToYear"><i class="bi bi-clock-history"></i>  2019-2021</p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Coordonne, Planifie et Assure que l’occupation des rails soit conforme et autorisée.</p>
+                                        <p>Affecte, Coordonne, et Planifie les équipes et Engins Moteur.</p>
+                                        <p>Veille au respect des exigences de circulation ferroviaire des transports marchandises.</p>
+                                        <p>Coordonne et Régule les livraisons et enlèvements et adapte le plan de transport en temps réel.</p>
+                                        <p>Responsable livraisons et enlèvements des trains de marchandise "nucléaire" jusqu'au départ du triage vers grandes lignes.</p>
+                                        <p>Assure le suivi des arrivées/départs des trains fret sur les longues distances.</p>
+                                    </div>
+                                </div>       
                             </div>
-                            
-                            <div class="lineSeparatorH1" id="bienvenue"></div>
-                            <div>
-                                <span class="sm noLg" style="font-size:smaller">F. MANIER</span>
-                                <span class="lg" style="font-size:smaller">François MANIER</span>
+                        </li>
+                        <li class="subsectionExperience">
+                            <div class="timeline-badge"><i class="bi bi-briefcase"></i></div>
+                            <div class="timeline-panel-container-inverted">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h3><span class="md lg">Sté </span><span class="sm">C.M.T</span><span class="sm" style="font-size:smaller">-Inspection</span></h3>
+                                        <h4><span class="md lg">Cadre </span><span class="sm">Responsable opérationnel</span></h4>
+                                        <p class="text-muted"><i class="bi bi-clock-history"></i>  2014-2019</p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Prépare, Planifie et Participe à toutes les phases de projet de chantier (de la recherche jusqu'à la fin du projet et du retour d'expérience).</p>
+                                        <p>Anticipe, Coordonne, et Planifie les projets la mise à disposition et les retraits chantiers, manage un effectif de 30 personnes.</p>
+                                        <p>Assure et Participe à l’évolution du personnel avec le responsable QSHE (conformité des certifications, habilitations et aptitudes médicales).</p>
+                                        <p>Veille au respect des engagements contractuels, de l'application des procédures et spécificités des activités.</p>
+                                        <p>Constitue les dossiers de réponse aux appels d’offres, Prépare, Suis les prestations, et, est l’interlocuteur donneurs d’ordre client.</p>
+                                    </div>
+                                </div>       
+                            </div>
+                        </li>
+                        <li class="subsectionExperience">
+                            <div class="timeline-badge"><i class="bi bi-briefcase"></i></div>
+                            <div class="timeline-panel-container">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h3><span class="sm"></span>SEAFRANCE<span class="md lg" style="font-size:smaller"> - Compagnie Maritime Ferries</span></h3>
+                                        <h4>Responsable des stocks</h4>
+                                        <p class="text-muted"><i class="bi bi-clock-history"></i>  1996-2012</p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Coordonne, Planifie et réalise la transmission documentaire afin que l’occupation des rails soit conforme et autorisée.</p>
+                                        <p>Affecte, Coordonne, et Planifie la mise à disposition des équipes.</p>
+                                        <p>Veille au respect de la circulation ferroviaire des livraisons marchandises et enlèvement des moyens de transport.</p>
+                                        <p>Coordonne et Régule en temps réel les livraisons selon les aléas rencontrés.</p>
+                                        <p>Assure le suivi des arrivées et départs des trains fret sur les longues distances.</p>
+                                    </div>
+                                </div>       
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- -------------------- SECTION STUDIES & FORMATIONS -------------------- -->
+            <div class="lineSeparator" id="studies"></div>
+            <!--<div class="containerStudies">-->
+            <section class="StudyFormation" id="study">
+                <div class="backgroundStudyFormation">
+                    
+                    <div class="studyH2">
+                        <h2>Etudes & Formations</h2>
+                    </div>
+                    <div class="underLineTitleH2">
+                        <div class="underLineGraphic"></div>
+                        <div class="bibi" id="studyIcon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <div class="underLineGraphic"></div>
+                    </div>
+                    <div class="sectionsCertificate row">
+                        <div class="content mainCertificate col-sm-12 col-md-6 col-lg-7">
+                            <div class="container certificate main">
+                                <div class="bibiCertificateIcon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <h3>
+                                    <span class="sm">Niveau 5</span>
+                                    <span class="md lg"> de la</span>
+                                    <span class="sm"> Certification</span>
+                                    <span class="sm"> Développeur WEB</span><br>
+                                    <span class="md lg"> et WEB mobile</span><br>
+                                    <span class="sm">(2022)</span>
+                                </h3>
+                                <div class="studiPlusLogo">
+                                    <img src="https://www.studi.com/sites/default/files/2021-08/Studi%2B.svg" alt="Logo Studi plus">
+                                </div>
+                                <h4>
+                                    <span class="md lg"></span>
+                                    STUDI - Campus PARIS<br><span class="minimise">(Groupe Galileo Global Education)</span>
+                                </h4>
+                                <p>La formation a durée 2 ans (sur 18 mois).<br>
+                                    Elle m'a permis de parcourir les différents métiers du développement WEB</p>
+                                <p>Elle m'a permis également d'acquérir et solidifier des compétences
+                                    en création et développement d'applications WEB et WEB mobile.</p>
+                                <p>Gérer des projets d'application WEB de sa préparation à sa maintenance,
+                                    en appliquant les principes de méthodes "agilité".
+                                    Principes que j'utilise dans ma façon de travailler afin de satisfaire l'utilisateur client</p>
                             </div>
                         </div>
-                    </h1>
+                        <div class="content asideCertificate col-sm-12 col-md-6 col-lg-5">
+                            <div class="subsectionCertificate">
+                                <div class="container certificate certificateAside">
+                                    <div class="bibiCertificateIcon">
+                                        <i class="bi bi-award"></i>
+                                    </div>
+                                    <h3>
+                                        <span class="sm">Master</span>
+                                        <span class="md lg"> Management</span>
+                                        <span class="sm"> Logistique</span>
+                                        <span class="md lg"> et Transport </span><br>
+                                        <span class="sm">(2014)</span>
+                                    </h3>
+                                    <div class="studiPlusLogo">
+                                        <img src="img/logo/logoIUT.png" style="width:60%;" alt="LogoIUT">
+                                    </div>
+                                    <h4>
+                                        <span class="md lg"></span>
+                                        IUT B - Lille III
+                                    </h4>
+                                    <p>La formation à durée 2 ans, nous avons acquis des compétences en management d'entreprise dans le domaine
+                                        de la logistique et du transport.<br>
+                                    j'applique un management dont la phylosophie est basé sur l'humain, c'est-à-dire ce qui est faisable humainement,
+                                    avec le temps nécessaire pour le faire. Le meilleur résultat est basé sur un consensus utilisateur.</p>
+                                </div>
+                                <div class="container certificate certificateAside">
+                                    <div class="bibiCertificateIcon">
+                                        <i class="bi bi-award"></i>
+                                    </div>
+                                    <h3>
+                                        <span class="sm">DUT Gestion Logistique</span>
+                                        <span class="md lg"> et Transport </span><br>
+                                        <span class="sm">(2011)</span>
+                                    </h3>
+                                    <div class="studiPlusLogo">
+                                        <img src="img/logo/logoIUT.png" style="width:60%;" alt="LogoIUT">
+                                    </div>
+                                    <h4>IUT B - Lille III</h4>
+                                    <p>La formation à durée 2 ans, nous avons parcouru les différents métiers de la Logistique et transport, 
+                                        et de ses moyens embarqués.<br>
+                                    Nous avons acquis des compétences en gestion de cette spécialisation, notamment dans la gestion de projet.<br>
+                                    Nous avons manipuler les outils et méthodes nécessaires à cette gestion de la production</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- -------------------- SECTION WELCOME -------------------- -->
-        <div class="lineSeparator" id="bienvenue"></div>
-        <section class="welcome">
-            <h2>
-                <span class="lg">Bonjour et </span>
-                <span class="sm">Bienvenue</span>
-                <span class="md"> sur mon CV</span>
-            </h2>
-            <div class="underLineTitleH2">
-                <div class="underLineGraphic"></div>
-                <div class="bibi" id="welcomeIcon"></div>
-                <div class="underLineGraphic"></div>
-            </div>
-            <div class="text">
-                <p>Je suis développeur et intégrateur WEB situé dans la région des Hauts de france.<br>
-                    <br>
-                    Mon parcours professionnel est diversifié, j'ai été responsable en gestion de stocks
-                    dans le milieu maritime, puis ingénieur d'affaire - cadre responsable opérationnel dans 
-                    le milieu du nucléaire, et superviseur des opérations de production dans le milieu du
-                    ferroviaire.<br>
-                    Avec ces différentes expériences, je peux comprendre les problématiques que
-                    vous pouvez rencontrer.<br>
-                    Dans ces environnements comme dans tant d'autres, chaque acteur du projet à son importance.
-                    Je saurai les écouter car c'est une de mes qualités.
-                    Vous pourrez avoir plus de détails dans ma section intitulé :"Expériences".
-                    <br>
-                    En continuant votre lecture, je vous présenterai mes compétences et services en liaison avec
-                    le développement informatique et la conception de sites internet destinés aux
-                    professionnels et aux particuliers. Vos interfaces seront construits gràce aux langages HTML,
-                    CSS, dynamisé en Javascript et facilités avec les frameworks, librairies et outils (comme Bootstrap,
-                    jQuery, Sass...) pour le front-end. Les dialogues serveurs seront réalisé avec PHP, Javascript
-                    avec React-JS. Vos bases de données seront codées en SQL.<br>
-                    <br>
-                    Je vous invite également à découvrir la section "compétences" qui abordera cela plus en détails.<br>
-                    <br>
-                    Bonne lecture !
-                </p>
-            </div>
-        </section>
-    </main>
+            <!-- -------------------- SECTION TECHNICAL SKILLS -------------------- -->
+            <div class="lineSeparator" id="skill"></div>
+            <section class="skillSection" id="skills"> 
+                <div class="heading">
+                    <h2><span class="sm">Compétences</span></h2>
+                </div> 
+                <div class="underLineTitleH2">
+                    <div class="underLineGraphic"></div><div class="bibi" id="skillsIcon"></div><div class="underLineGraphic"></div>
+                </div>
+                <div class="container">
+                    <div class="row skillsTechnic">
+                        <div class="langages col-lg-6"> <!-- Colonnes de Gauche des COMPETENCES -->
+                            <div class="container progressTheme">
+                                <h5 class="progressH">Développement WEB</h5>
+                                <div class="progress"> 
+                                    <div class="progress-bar eighty-five" id="DevWeb" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                </div>
+                                <p class="progressH">La création d’un site internet est devenu très facile à faire, mais
+                                    ce qui demande une maîtrise parfaite des langages et outils,
+                                    c’est le développement d’un site correct et performant !</p>
+                                <p class="progressH">PHP5 / MVC / HTML5 / CSS3 / AJAX / JavaScript / jQuery / JSON</p><!-- / XML / HTACCESS-->
+                            </div>
+                            <div class="container progressTheme">
+                                <h5 class="progressH">Langages de Programmation</h5>
+                                <div class="progress">
+                                    <div class="progress-bar ninety" id="LgProg" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%</div>
+                                </div>
+                                <p>Les langages de programmation sont fait pour communiquer des instructions claires,
+                                        nettes et précises à une machine, afin de contrôler et assurer le comportement de celle-ci.</p>
+                                <p>PHP / Java</p>
+                            </div>
+                            <div class="container progressTheme">
+                                <h5 class="progressH">Système de gestion de base de donnée (SGBD)</h5>
+                                <div class="progress">
+                                    
+                                    <div class="progress-bar eighty-five" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                </div>
+                                <p class="progressH">Stockage et partage des informations dans une base de données en assurant la qualité, 
+                                    la durabilité et la confidentialité de l’information.</p>
+                                <p class="progressH">MySQL / MS SQL Server</p>
+                            </div>
+                            <div class="progressThemeGroup">
+                                <h4 class="progressH">Langues</h4>
+                                <div class="container progressTheme">
+                                    <h5 class="progressH">Français (maternel)</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar hundred" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                                    </div>
+                                    <h5 class="progressH">Anglais</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar seventy" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
+                                    </div>
+                                    <div>
+                                        <p class="progressH">Langues parlées, écrites et comprises !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>   
+                        
+                        <div class="toolsLangages col-lg-6"> <!-- Colonnes de Droite des COMPETENCES -->
+                            <div class="progressThemeGroup">
+                                <h4 class="progressH">CMS</h4>
+                                <div class="container progressTheme">
+                                    <h5 class="progressH">WordPress</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar eighty-five" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                    </div>
+                                    <h5 class="progressH">Prestashop</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar eighty-five" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                    </div>
+                                    <div>
+                                        <p class="progressH">Installation, configuration, administration et formation sur les différents outils CMS utilisés.
+                                            L’ajout d’extensions en fonction du besoin.Langues parlées, écrites et comprises !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressThemeGroup">
+                                <h4 class="progressH">Conception graphique</h4>
+                                <div class="container progressTheme">
+                                    <h5 class="progressH">Adobe Photoshop</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar eighty-five" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                    </div>
+                                    <h5 class="progressH">Adobe Illustrator</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar seventy" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p class="progressH">Réalisation et découpage des maquettes (format PSD) pour intégration et
+                                                développement du site web et création d’images au besoin.</p>
+                                            </li>
+                                            <li>
+                                                <p class="progressH">Création de logo, image ou autre donnée au format vectoriel</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressThemeGroup">
+                                <h4 class="progressH">Référencement naturel</h4>
+                                <div class="container progressTheme">
+                                    <h5 class="progressH">Amélioration du classement des sites WEB</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar eighty-five" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                                    </div>
+                                    <p class="progressH">Moyen d’optimiser et d’améliorer la visibilité du site sur les différents moteurs de recherche et
+                                            éliminer les facteurs bloquants la bonne indexation du contenu.</p>
+                                    <p class="progressH">Optimisation du contenu / SEO</p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </section>
 
-    <!-- -------------------- FOOTER -------------------- -->
-    <footer>
-        <div>
+            <!-- -------------------- SECTION STAY IN CONTACT -------------------- -->                   
+            <div class="lineSeparator" id="coordonates"></div>
+            <section class="container contactMe" style="width:100%" id="coordonate">
+                <div class="contact">
+                    <div class="contactMap">
+                        <div class="carteMap" id="mdCarteMap">
+                            <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none">
+                                <img class="map" id="mapImg" src="img/cartelg.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contactCoordonates">
+                        <div class="myCoordonatesPro container">
+                            <div class="container">
+                                <div class="whiteH2">
+                                    <h2>Restons en Contact</h2>
+                                </div>
+                                <div class="underLineTitleH2">
+                                    <div class="underLineGraphic"></div>
+                                    <div class="bibi" id="ContactMeIcon">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                    </div>
+                                    <div class="underLineGraphic"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="coordonatesContent">
+                                <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none;">
+                                    <div class="bibiCenter adress">
+                                        <i class="bi bi-house-door bibi"></i>
+                                        <h5>Me rencontrer</h5>
+                                        <!--<p>adresse</p>-->
+                                    </div>
+                                </a>
+                                <div class="bibiCenter phone">
+                                    <i class="bi bi-phone-vibrate bibi"></i>
+                                    <h5>M'appeler</h5>
+                                <!-- <p>+33 6 xx xx xx xx</p>-->
+                                </div>
+                                <a include_once("test/data.txt") target="_blank" style="text-decoration:none;">
+                                    <div class="bibiCenter mail">
+                                        <i class="bi bi-envelope-exclamation bibi"></i>
+                                        <h5>M'envoyer un email</h5>
+                                    <!-- <p>sendMailToMe</p>-->
+                                    </div>
+                                </a>        
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </main>
 
-        </div>
-        <div class="pageUp">
-            <a href="#myLogo"><i class="bi bibiUp bi-chevron-up"></i></a>
-        </div>
-        <div class="footer-copyright">© 2020 Copyright | Tous droits réservés</div>
-    </footer>
-       
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
+        <!-- -------------------- FOOTER -------------------- -->
+        <footer>
+            <div>
+
+            </div>
+            <div class="pageUp">
+                <a href="#myLogo"><i class="bi bibiUp bi-chevron-up"></i></a>
+            </div>
+            <div class="footer-copyright">© 2020 Copyright | Tous droits réservés</div>
+        </footer>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
 </html>

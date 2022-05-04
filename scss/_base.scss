@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 
+
 /* ******************** var color ******************** */
 :root {
     --NB000: #fff;/*white - rgb(255,255,255) - hsl(0, 0%, 100%)*/
@@ -21,7 +22,7 @@
 }    
 
 /* ******************** var font-size  ******************** */
-$sizeP: 1.4em;
+$sizeP: 100%;
 
 /* ******************** GENERAL ********************** */
 h1 {
@@ -31,7 +32,7 @@ h1 {
 }
 h2 {
     text-align: center;
-    font-size: $sizeP* 1.6;
+    font-size: $sizeP*6;
 }
 h3 {
     font-size: $sizeP* 1.4;
@@ -58,36 +59,3 @@ div.text{
     padding:0 20px;
 }
 
-/**************************************************************/
-/********************* Responsive Tablet **********************/
-@media only screen and (min-width:415px) {
-    span.md, div.md.map, #mdImg2 {
-        display:unset;
-    }
-}
-
-/***************************************************************/
-/********************* Responsive Desktop **********************/
-@media only screen and (min-width:769px) {
-    div.mainTopLogo img{
-        width:auto;
-        height:181px;
-    }
-    span.lg, div.lg.map, #lgImg3 {
-        display:unset;
-    }
-    .noLg {
-        display:none;
-    }
-}
-
-/***************************************************************/
-/******************* Responsive Desktop xl ********************/
-@media only screen and (min-width:1192px) {
-    .nolx {
-        display:none;
-    }
-    .xl {
-        display: unset;
-    }
-}

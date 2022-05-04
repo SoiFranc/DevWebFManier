@@ -1,3 +1,4 @@
 /secure
 *.docx
 /node_modules
+/bootstrap-icons-1.8.1
