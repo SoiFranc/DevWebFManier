@@ -384,7 +384,20 @@ div.coordonatesContent h5, div.coordonatesContent P {
 div.bibiCenter {
     text-align: center;
     margin:30px 0 30px 0;
-}/*
+}
+.downloadFile {
+    
+    border-radius: 5px;
+    background-color: var(--NB250); 
+}
+
+.btnDownload:hover {
+    border-color: var(--HOT500);
+}
+.btnDownload:focus {
+    background-color:var(--HOT500)
+}
+/*
 div.contactUs {
     display: flex;
     flex-direction: row;

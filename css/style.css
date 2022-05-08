@@ -173,14 +173,14 @@ button:focus div#bebe {
   /* Couleur de fond de la barre de navigation */
   background-color: var(--NB000);
   border-color: var(--NB000);
-  font-size: 80%;
+  font-size: 120%;
 }
 
 /* Couleur des titres affichés dans la barre */
 .navbar .navbar-brand {
   color: var(--NB800);
   font-family: var(--police);
-  font-size: 80%;
+  font-size: 120%;
 }
 
 /* Couleur utilisée lors du passage de la souris sur un titre de la barre */
@@ -198,6 +198,11 @@ button:focus div#bebe {
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
   color: var(--HOT500);
+}
+
+/*Download area */
+.downloadFile > span {
+  font-size: 80%;
 }
 
 /* ******************** PRESENTATION ********************** */
@@ -713,6 +718,19 @@ div.coordonatesContent h5, div.coordonatesContent P {
 div.bibiCenter {
   text-align: center;
   margin: 30px 0 30px 0;
+}
+
+.downloadFile {
+  border-radius: 5px;
+  background-color: var(--NB250);
+}
+
+.btnDownload:hover {
+  border-color: var(--HOT500);
+}
+
+.btnDownload:focus {
+  background-color: var(--HOT500);
 }
 
 /*

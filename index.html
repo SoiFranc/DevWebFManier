@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mon CV</title>
-        <meta name="description" content="Ma page web présente mon curriculum vitae (CV).
+        <meta name="description" content="Ma page web présente mon curriculum vitae (CV) de développeur web et web mobile.
             Vous y trouverez mes compétences, savoir-faire et savoir être.
             Mes années d'expériences expliquant mon parcours professionnel.
-            Mes compétences technique en développement web, mais également en gestion de projet.">
+            Mes compétences technique en développement  en front-end (HTML, CSS, Javascript) et en back-end 
+            (PHP, Javascript avec reactJS et gérer les data-base avec SQL), mais également en gestion de projet.">
 
         <link rel="stylesheet" href="css/style.css">
 
@@ -19,7 +20,8 @@
         <!-- -------------------- header NavBar Menu -------------------- -->
         <header class="header">
             <div class="headerMenu">
-                <nav class="navbar navbar-expand-md fixed-top"><!--navbar-light bg-light-->
+                
+                <nav class="navbar navbar-expand-md fixed-top">
                     <div class="container container-fluid">
                         <a id="logo" class="navbar-brand" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="300" height="900" fill="none" class="myLogo" viewBox="0 0 300 900">
@@ -69,18 +71,22 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="downloadFile">
+                        <a type="button" class="btn btnDownload" href="dwnd/Hello.docx" download><i class="bi bi-download"></i> CV.docx</a>
+                        <a type="button" class="btn btnDownload" href="dwnd/Hello.pdf" download><i class="bi bi-download"></i> CV.pdf</a>
+                    </div>
+                        
                 </nav>
+                
             </div>
         </header>
 
         <!-- -------------------- Main Content -------------------- -->
         <main>
+
             <!-- -------------------- mainTopPresentation -------------------- -->
             <div class="mainTop">
-                <div class="mainTopLogo" id="idMyLogo">
-                    <!--src="img/monImage.png"-->
-                    <!--<img src="img/monImageDevIntWEBetMobile.png" alt="Logo">-->
-                </div>
+                <div class="mainTopLogo" id="idMyLogo"></div>
             </div>
             <div class="mainTopPresentationImg" id="mainTopPresentationImgCss">
                 <div class="mainTopPresentationDivH1">
@@ -97,11 +103,9 @@
                             <div class="divH1 container">
                                 <div>
                                     <span class="sm">Développeur </span>
-                                    <!--<span class="xl">- Intégrateur </span>-->
                                     <span class="sm">WEB</span>
                                     <span class="lg"> & WEB mobile</span>
                                 </div>
-                                
                                 <div class="lineSeparatorH1" id="bienvenue"></div>
                                 <div>
                                     <span class="sm noLg" style="font-size:smaller">F. MANIER</span>
@@ -115,8 +119,9 @@
 
             <!-- -------------------- SECTION WELCOME -------------------- -->
             <div class="lineSeparator" id="bienvenue"></div>
+
             <section class="welcome">
-                <h2> Bijour vousôtes
+                <h2>
                     <span class="sm">Bonjour</span>
                     <span class="lg"> et Bienvenue</span>
                     <span class="md"> sur mon CV</span>
@@ -137,9 +142,8 @@
                         Dans ces différents environnements comme dans tant d'autres, chaque projet passe par des phases de
                         préparations, d'échanges et de tests. Tout cela centré sur la prise en compte des points de vue
                         des clients finaux, ainsi que l'avis de chaque acteur du projet. 
-                        Pour ma part, c'est un avantage car voici 2 de mes principales qualités : être à l'Ecoute et 
-                        ma capacité d'adaptation.
-                        Vous pourrez avoir plus de détails dans ma section intitulé :"Expériences".
+                        Cela a été un avantage durant mon parcours car l'écoute, l'adaptation et la rigueur sont mes qualités principales.
+                        Plus de détails sur mon parcours se trouvent dans la section intitulé :"Expériences".
                         <br>
                         En continuant votre lecture, je vous présenterai mes compétences et services en liaison avec
                         le développement informatique et la conception de sites internet destinés aux
@@ -162,7 +166,10 @@
             <section class="experience N2" id="experience">
                 <div class="container">
                     <div class="heading">
-                        <h2><span class="sm">Expériences pro</span><span class="md lg">fessionnelles</span></h2>
+                        <h2>
+                            <span class="sm">Expériences pro</span>
+                            <span class="md lg">fessionnelles</span>
+                        </h2>
                     </div>
                     <div class="underLineTitleH2">
                         <div class="underLineGraphic"></div><div class="bibi" id="experiencesIcon"></div><div class="underLineGraphic"></div>
@@ -173,16 +180,24 @@
                             <div class="timeline-panel-container"> <!-- c'est les bulles de dialogue Texte de la timeline -->
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h3><span class="sm">SNCF</span><span class="md lg"> – FRET SA</span></h3>
-                                        <h4><span class="sm">Superviseur</span><span class="md lg"> de</span><span> Production</span></h4>
+                                        <h3>
+                                            <span class="sm">SNCF</span>
+                                            <span class="md lg"> – FRET SA</span>
+                                        </h3>
+                                        <h4>
+                                            <span class="sm">Superviseur</span>
+                                            <span class="md lg"> de</span>
+                                            <span> Production</span>
+                                        </h4>
                                         <p class="text-muted" id="yearToYear"><i class="bi bi-clock-history"></i>  2019-2021</p>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Coordonne, Planifie et Assure que l’occupation des rails soit conforme et autorisée.</p>
-                                        <p>Affecte, Coordonne, et Planifie les équipes et Engins Moteur.</p>
+                                        <p>Planifie, Coordonne et Assure que l’occupation des rails soit conforme et autorisée.</p>
+                                        <p>Planifie, Coordonne et Affecte les équipes en adéquation avec les Engins Moteur.</p>
                                         <p>Veille au respect des exigences de circulation ferroviaire des transports marchandises.</p>
-                                        <p>Coordonne et Régule les livraisons et enlèvements et adapte le plan de transport en temps réel.</p>
-                                        <p>Responsable livraisons et enlèvements des trains de marchandise "nucléaire" jusqu'au départ du triage vers grandes lignes.</p>
+                                        <p>Coordonne et Régule les livraisons, enlèvements et adapte le plan de transport en temps réel.</p>
+                                        <p>Responsable des livraisons et enlèvements des trains de marchandise "nucléaire" 
+                                            depuis la prise en charge en centrale jusqu'au départ du train de la gare triage vers les grandes lignes.</p>
                                         <p>Assure le suivi des arrivées/départs des trains fret sur les longues distances.</p>
                                     </div>
                                 </div>       
@@ -193,16 +208,31 @@
                             <div class="timeline-panel-container-inverted">
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h3><span class="md lg">Sté </span><span class="sm">C.M.T</span><span class="sm" style="font-size:smaller">-Inspection</span></h3>
-                                        <h4><span class="md lg">Cadre </span><span class="sm">Responsable opérationnel</span></h4>
+                                        <h3>
+                                            <span class="md lg">Sté </span>
+                                            <span class="sm">C.M.T</span>
+                                            <span class="sm" style="font-size:smaller">- Inspection</span><br>
+                                            <span class="lg"> Contrôle Non Destructif - tous milieux spéc Nucléaire</span>
+                                        </h3>
+                                        <h4>
+                                            <span class="md lg">Cadre </span>
+                                            <span class="sm">Responsable opérationnel</span>
+                                        </h4>
                                         <p class="text-muted"><i class="bi bi-clock-history"></i>  2014-2019</p>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Prépare, Planifie et Participe à toutes les phases de projet de chantier (de la recherche jusqu'à la fin du projet et du retour d'expérience).</p>
+                                        <p>Recherche, Analyse et Réponds aux appels d'offres.</p>
+                                        <p>Présente l'appel d'offre, Analyse les besoins client pour les équipes préparations (QSHE, RH, Opérationnel), et répartie leurs tâches.</p>
+                                        <p>Constitue et Supervise les dossiers d'offre, avec l'appui des équipes préparations (en respectant la date limite de dépôt des candidatures)
+                                            et détaille nos actions et nos communications en cas de déviance dans la livraison de la prestation avec le client.</p> 
+                                        <p>Une fois retenu : Prépare, Planifie et Participe à toutes les phases de projet de chantier jusqu'à sa clôture</p>
+                                        <p>Participe aux réunions pendant la phase execution du chantier avec le client des équipes opérationnelles, pour assurer le suivi,
+                                         la bonne du chantier et la bonne prise en compte des modifications à apporter pendant l'execution</p>
                                         <p>Anticipe, Coordonne, et Planifie les projets la mise à disposition et les retraits chantiers, manage un effectif de 30 personnes.</p>
-                                        <p>Assure et Participe à l’évolution du personnel avec le responsable QSHE (conformité des certifications, habilitations et aptitudes médicales).</p>
+                                        <p>M'assure et Participe à l’évolution du personnel avec le responsable QSHE (conformité des certifications, habilitations et aptitudes médicales).</p>
                                         <p>Veille au respect des engagements contractuels, de l'application des procédures et spécificités des activités.</p>
-                                        <p>Constitue les dossiers de réponse aux appels d’offres, Prépare, Suis les prestations, et, est l’interlocuteur donneurs d’ordre client.</p>
+                                        <p>Participe aux réunions de fin de chantier avec le client.</p>
+                                        <p>M'assure que le retour d'expérience soit pris en compte pour nos prochains projets avec les équipes concernées.</p>
                                     </div>
                                 </div>       
                             </div>
@@ -212,16 +242,31 @@
                             <div class="timeline-panel-container">
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h3><span class="sm"></span>SEAFRANCE<span class="md lg" style="font-size:smaller"> - Compagnie Maritime Ferries</span></h3>
+                                        <h3>
+                                            <span class="sm">SEAFRANCE</span>
+                                            <span class="md lg" style="font-size:smaller"> - Compagnie Maritime Ferries</span>
+                                        </h3>
+                                        <h4>Responsable centre comercial duty-free (remplacements)</h4>
+                                        <p class="text-muted"><i class="bi bi-clock-history"></i>  2009-2012</p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Responsable du centre commercial : responsable des ventes à bord en duty-free (représente environ un CA de 350000€/journalier)</p>
+                                        <p>Encadre et Supervise le personnel de vente (caisses, animation et vente directe sur un effectif une dizaine de personnes).</p>
+                                        <p>Assure la satisfaction client (Expérience achat, Achalandage, promotions, etc.).</p>
+                                        <p>M'assure de la bonne tenu des points de vente dans la zone commerciale 
+                                            (sécurité, hygiène et environnement avec l'appui du service concerné).</p>
+                                        <p>Coordonne les équipes et m'assure que la qualité des offres proposées aux clients soit maintenue à chaque "croisière".</p>
+                                    </div>
+                                    <div class="timeline-heading">
                                         <h4>Responsable des stocks</h4>
                                         <p class="text-muted"><i class="bi bi-clock-history"></i>  1996-2012</p>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Coordonne, Planifie et réalise la transmission documentaire afin que l’occupation des rails soit conforme et autorisée.</p>
-                                        <p>Affecte, Coordonne, et Planifie la mise à disposition des équipes.</p>
-                                        <p>Veille au respect de la circulation ferroviaire des livraisons marchandises et enlèvement des moyens de transport.</p>
-                                        <p>Coordonne et Régule en temps réel les livraisons selon les aléas rencontrés.</p>
-                                        <p>Assure le suivi des arrivées et départs des trains fret sur les longues distances.</p>
+                                        <p>Planifie et Gère les commandes produits à bord du navire (représente environ 2500 à 3000 références).</p>
+                                        <p>M'assure que les points de vente à bord soient approvisionnés de leurs produits de vente</p>
+                                        <p>Garantis la qualité, la quantité et la sécurité des produits jusqu'à leur point de vente à bord.</p>
+                                        <p>Gère l'entrepot à bord des produits de vente (2500 à 3000 références représentant un chiffre de plus 1 Million d'€uro), 
+                                            Garantis la fiabilité des stocks et gère les écarts.</p>
                                     </div>
                                 </div>       
                             </div>
@@ -232,10 +277,9 @@
 
             <!-- -------------------- SECTION STUDIES & FORMATIONS -------------------- -->
             <div class="lineSeparator" id="studies"></div>
-            <!--<div class="containerStudies">-->
+            
             <section class="StudyFormation" id="study">
                 <div class="backgroundStudyFormation">
-                    
                     <div class="studyH2">
                         <h2>Etudes & Formations</h2>
                     </div>
@@ -460,6 +504,7 @@
                     </div>
                     <div class="contactCoordonates">
                         <div class="myCoordonatesPro container">
+                            
                             <div class="container">
                                 <div class="whiteH2">
                                     <h2>Restons en Contact</h2>
@@ -474,27 +519,16 @@
                             </div>
                             
                             <div class="coordonatesContent">
-                                <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none;">
+                                
                                     <div class="bibiCenter adress">
-                                        <i class="bi bi-house-door bibi"></i>
-                                        <h5>Me rencontrer</h5>
-                                        <!--<p>adresse</p>-->
+                                        <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none;"></a>
+                                            <img src="img/contactMe.png" style="width:100%; margin-top:-50px">
+                                        </a>
                                     </div>
-                                </a>
-                                <div class="bibiCenter phone">
-                                    <i class="bi bi-phone-vibrate bibi"></i>
-                                    <h5>M'appeler</h5>
-                                <!-- <p>+33 6 xx xx xx xx</p>-->
-                                </div>
-                                <a include_once("test/data.txt") target="_blank" style="text-decoration:none;">
-                                    <div class="bibiCenter mail">
-                                        <i class="bi bi-envelope-exclamation bibi"></i>
-                                        <h5>M'envoyer un email</h5>
-                                    <!-- <p>sendMailToMe</p>-->
-                                    </div>
-                                </a>        
+                                
                             </div>
                         </div>
+                        
                     </div>
                 </div> 
             </section>

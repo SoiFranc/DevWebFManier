@@ -50,14 +50,14 @@ button:focus div#bebe {
     /* Couleur de fond de la barre de navigation */
     background-color: var(--NB000);
     border-color: var(--NB000);
-    font-size: $sizeP* 0.8;
+    font-size: $sizeP* 1.2;
 }
 
 /* Couleur des titres affichés dans la barre */
 .navbar .navbar-brand {
     color: var(--NB800);
     font-family: var(--police);
-    font-size: $sizeP* 0.8;
+    font-size: $sizeP* 1.2;
 }
 
 /* Couleur utilisée lors du passage de la souris sur un titre de la barre */
@@ -75,4 +75,8 @@ button:focus div#bebe {
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
     color: var(--HOT500);
+}
+/*Download area */
+.downloadFile>span {
+    font-size: $sizeP*0.8;
 }
