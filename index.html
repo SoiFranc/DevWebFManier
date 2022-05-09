@@ -37,7 +37,7 @@
                             <i type="button" class="bi bibiToggleOpen bi-list"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav menu me-auto mb-2 mb-md-0">
+                            <ul class="navbar-nav menu"><!-- me-auto mb-2 mb-md-0 -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#bienvenue">
                                         <i class="bi bi-bookmark-check"></i>
@@ -68,16 +68,27 @@
                                             Contact
                                     </a>
                                 </li>
+                                <li>
+                                    <div class="downloadFile">
+                                        <div class="container">
+                                            <div class="interior">
+                                              <a class="btn" href="#open-modal"><i class="bi bi-download"></i> CV</a>
+                                            </div>
+                                        </div>
+                                        <div id="open-modal" class="modal-window">
+                                            <div>
+                                                <a href="#" title="Close" class="modal-close">Close</a>
+                                                <div>Télécharger :</div>
+                                                <a type="button" class="btn btnDownload" href="dwnd/CV_DevWeb_FManier.docx" download><i class="bi bi-download"></i> CV.docx</a>
+                                                <a type="button" class="btn btnDownload" href="dwnd/CV_DevWeb_FManier.pdf" download><i class="bi bi-download"></i> CV.pdf</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="downloadFile">
-                        <a type="button" class="btn btnDownload" href="dwnd/Hello.docx" download><i class="bi bi-download"></i> CV.docx</a>
-                        <a type="button" class="btn btnDownload" href="dwnd/Hello.pdf" download><i class="bi bi-download"></i> CV.pdf</a>
-                    </div>
-                        
                 </nav>
-                
             </div>
         </header>
 
@@ -495,16 +506,17 @@
             <div class="lineSeparator" id="coordonates"></div>
             <section class="container contactMe" style="width:100%" id="coordonate">
                 <div class="contact">
+                    <!--Map position to right to coordonates-->
                     <div class="contactMap">
                         <div class="carteMap" id="mdCarteMap">
-                            <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none">
+                            <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr"  title="Besoin d'un itinéraire pour se rencontrer ?" target="_blank" style="text-decoration:none">
                                 <img class="map" id="mapImg" src="img/cartelg.png">
                             </a>
                         </div>
                     </div>
+                    
                     <div class="contactCoordonates">
                         <div class="myCoordonatesPro container">
-                            
                             <div class="container">
                                 <div class="whiteH2">
                                     <h2>Restons en Contact</h2>
@@ -519,16 +531,13 @@
                             </div>
                             
                             <div class="coordonatesContent">
-                                
-                                    <div class="bibiCenter adress">
-                                        <a href="https://www.google.fr/maps/dir//425+Rue+D%C3%A9sir%C3%A9+Lambert,+Saint-Folquin/@50.8645747,2.07947,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47dc5c7aacfa4eff:0xded054c425bad3f6!2m2!1d2.124338!2d50.9199333?hl=fr" target="_blank" style="text-decoration:none;"></a>
-                                            <img src="img/contactMe.png" style="width:100%; margin-top:-50px">
-                                        </a>
+                                <a id="businessCard" href="dwnd/businessCard.pdf" title="Voulez-vous ma carte de visite ?" download>
+                                    <div class="bibiCenter adress">Ma business card ?
+                                        <img src="img/contactMe.png" style="width:100%; margin-top:-50px">
                                     </div>
-                                
+                                </a>
                             </div>
                         </div>
-                        
                     </div>
                 </div> 
             </section>
@@ -544,8 +553,7 @@
             </div>
             <div class="footer-copyright">© 2020 Copyright | Tous droits réservés</div>
         </footer>
-        
-        
+                
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>

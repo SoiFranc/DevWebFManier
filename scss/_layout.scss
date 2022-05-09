@@ -20,6 +20,7 @@ div .lineSeparatorH1 {
 }
 div.mainTopPresentationImg#mainTopPresentationImgCss {
     display:flex;
+    margin-top:16px;
     width:100%;
     height:70vh;
     background-image: url('../img/imgPresentation.jpg');
@@ -341,12 +342,7 @@ animation: progressAnimationStrikeHundred 5s;
 /********************* SECTION CONTACT ***********************/
 section#coordonate {
     height:100%;
-}/*
-div#contactMap { 
-    display:flex;
-    width:240px;
-    height:auto;
-}*/
+}
 div.contact {
     display:flex;
     flex-direction: column;
@@ -397,23 +393,7 @@ div.bibiCenter {
 .btnDownload:focus {
     background-color:var(--HOT500)
 }
-/*
-div.contactUs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    float:left;
-}*//*
-img#smImg, div#divSmMap {
-    width:240px;
-    height:200px;
-}
-#lgImg3,#mdImg2 {
-    display: none;
-}
-*/
+
 
 
 
